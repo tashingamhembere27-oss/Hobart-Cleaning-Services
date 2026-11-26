@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hobartcleaningservices.vercel.app/sitemap.xml

@@ -1,0 +1,14 @@
+# Hobart Cleaning Services
+
+> Flat-rate house cleaning in Hobart, priced by the size of the home. Instant online price estimate and online booking.
+
+## Services
+- Premium house clean: one time, weekly (10% off), every 2 weeks (5% off) or every 4 weeks
+- Spring / deep clean: priced by number of bedrooms
+- End of lease clean: backed by a Bond Back Guarantee
+
+## Contact
+- Phone: 0458 283 459
+- Service area: we travel to customers in Hobart
+- Hours: 7 days a week, 8am to 8pm
+- Website: https://hobartcleaningservices.vercel.app/
