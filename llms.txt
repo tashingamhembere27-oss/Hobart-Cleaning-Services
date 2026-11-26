@@ -12,3 +12,9 @@
 - Service area: we travel to customers in Hobart
 - Hours: 7 days a week, 8am to 8pm
 - Website: https://hobartcleaningservices.vercel.app/
+
+## Prices (flat rate by home size, estimates for a property in good condition)
+- Once-off house clean: studio and 1 bedroom $132, 2 bedrooms $165, 3 bedrooms $198, 4 bedrooms $264
+- Spring / deep clean from: studio and 1 bedroom $231, 2 bedrooms $297, 3 bedrooms $363, 4 bedrooms $462
+- End of lease from: 1 bedroom $440, 2 bedrooms $550, 3 bedrooms $660, 4 bedrooms $990
+- Weekly cleans 10% off, fortnightly 5% off
