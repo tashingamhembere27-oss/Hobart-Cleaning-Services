@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hobart Cleaning Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7fbfa;--surface:#fff;--ink:#12303a;--muted:#4d6a72;--line:#cfe0dd;--accent:#1d8ea6;--accent-ink:#fff;--lemon:#f4e45a;--lemon-ink:#12303a;--mist:#e2f0ee;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1f25;--surface:#15303a;--ink:#e8f3f1;--muted:#9fbcc2;--line:#27454f;--accent:#4cc3dc;--accent-ink:#0e1f25;--mist:#16313a}}
+:root[data-theme="dark"]{--bg:#0e1f25;--surface:#15303a;--ink:#e8f3f1;--muted:#9fbcc2;--line:#27454f;--accent:#4cc3dc;--accent-ink:#0e1f25;--mist:#16313a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 0}
+.logo{font:800 1.3rem "Bricolage Grotesque",sans-serif;text-decoration:none}
+.logo span{background:var(--lemon);color:var(--lemon-ink);padding:0 .3em;border-radius:.3em;margin-right:.15em}
+nav a{margin-left:1.4rem;text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);border:0;border-radius:.6rem;padding:.8rem 1.4rem;font:600 1rem Figtree,sans-serif;text-decoration:none;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:3rem;align-items:center;padding:3rem 0 4.5rem}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:800}
+.hero p{color:var(--muted);max-width:34rem;margin:1.2rem 0 0}
+.quote{background:var(--surface);border:2px solid var(--ink);border-radius:1.2rem;padding:1.6rem;box-shadow:8px 8px 0 var(--lemon)}
+.quote h2{font-size:1.4rem;margin-bottom:1rem}
+.row label{margin:0}
+.row{display:flex;justify-content:space-between;align-items:center;padding:.65rem 0;border-bottom:1px dashed var(--line)}
+select{font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--ink);border-radius:.5rem;padding:.35rem .5rem}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin:1.2rem 0 1rem}
+.total strong{font:800 2.6rem "Bricolage Grotesque",sans-serif}
+.total span{color:var(--muted)}
+.quote .btn{width:100%;text-align:center}
+section{padding:4rem 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:2rem;max-width:30rem}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem}
+.services div{padding:1.1rem 0;border-top:2px solid var(--ink)}
+.services h3{font-size:1.3rem;margin-bottom:.3rem}
+.services p{margin:0;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;counter-reset:s;padding:0;list-style:none}
+.steps li{counter-increment:s}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--lemon);color:var(--lemon-ink);font:800 1.2rem "Bricolage Grotesque";margin-bottom:.8rem}
+.steps h3{font-size:1.2rem;margin-bottom:.3rem}
+.steps p{margin:0;color:var(--muted)}
+.band{background:var(--mist)}
+.incl{columns:2;gap:3rem;padding:0;list-style:none;margin:0}
+.incl li{padding:.45rem 0 .45rem 1.8rem;position:relative;break-inside:avoid}
+.incl li::before{content:"";position:absolute;left:.2rem;top:.85rem;width:.5rem;height:.9rem;border:solid var(--accent);border-width:0 3px 3px 0;transform:rotate(40deg) translateY(-30%)}
+blockquote{margin:0;font:700 clamp(1.4rem,3vw,2.1rem)/1.25 "Bricolage Grotesque",sans-serif;max-width:40rem}
+cite{display:block;margin-top:1rem;font:500 1rem Figtree;color:var(--muted);font-style:normal}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+label{display:block;font-weight:600;margin-bottom:1rem}
+input:not([type=checkbox]),textarea,select.f{display:block;width:100%;margin-top:.3rem;padding:.7rem;font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:.5rem}
+input:focus,textarea:focus,select.f:focus{border-color:var(--accent)}
+#sent{margin-top:1rem;font-weight:600;color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:1.8rem 0;color:var(--muted);font-size:.95rem}
+@media (max-width:760px){.hero,.contact,.services,.steps{grid-template-columns:1fr}.incl{columns:1}nav a:not(.btn){display:none}.hero{padding-top:1rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.note{font-size:.88rem;color:var(--muted);margin:.8rem 0 0}
+.sum{background:var(--mist);border-radius:.7rem;padding:.8rem 1rem;margin:0 0 1.2rem;font-weight:600}
+dialog{width:min(640px,calc(100% - 1.5rem));max-height:90dvh;overflow:auto;border:2px solid var(--ink);border-radius:1.2rem;background:var(--surface);color:var(--ink);padding:1.5rem;box-shadow:8px 8px 0 var(--lemon)}
+dialog::backdrop{background:rgba(10,25,30,.6)}
+dialog[open]{animation:pop .22s ease-out}
+@keyframes pop{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+.dh{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.dh h2{font-size:1.7rem}
+.x{background:none;border:1.5px solid var(--ink);color:var(--ink);width:2.3rem;height:2.3rem;border-radius:50%;font-size:1.2rem;cursor:pointer}
+fieldset{border:0;border-top:1px solid var(--line);margin:0 0 1rem;padding:1rem 0 0}
+legend{font:700 1.05rem "Bricolage Grotesque",sans-serif;padding:0 .5rem 0 0}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}
+.chks{display:grid;grid-template-columns:1fr 1fr;gap:.4rem 1rem}
+.chk{display:flex;gap:.5rem;align-items:center;font-weight:500;margin:0}
+.chk input{width:1.1rem;height:1.1rem;margin:0;accent-color:var(--accent)}
+select.f{width:100%;margin-top:.3rem;padding:.7rem}
+.acts{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem}
+.btn.alt{background:none;color:var(--ink);border:2px solid var(--ink)}
+@media (max-width:760px){.g2,.chks{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#top"><span>Hobart</span>Cleaning Services</a>
+  <nav><a href="#services">Services</a><a href="#how">How it works</a><a href="#contact" class="btn">Contact</a></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <h1>Come home to a clean house.</h1>
+    <p>Flat-rate pricing by the size of your home. Get your price in seconds, then book online or call 0458 283 459.</p>
+  </div>
+  <div class="quote" aria-labelledby="qh">
+    <h2 id="qh">Get an instant price</h2>
+    <div class="row"><label for="svc">Service</label>
+      <select id="svc"><option value="prem">Premium house clean</option><option value="deep">Spring / deep clean</option><option value="eol">End of lease</option></select></div>
+    <div class="row"><label for="bed">Size of home</label>
+      <select id="bed"><option value="0">Studio</option><option value="1">1 bedroom</option><option value="2" selected>2 bedrooms</option><option value="3">3 bedrooms</option><option value="4">4 bedrooms</option></select></div>
+    <div class="row" id="freqrow"><label for="freq">How often</label>
+      <select id="freq"><option value="o">One time</option><option value="w">Every week (10% off)</option><option value="f">Every 2 weeks (5% off)</option><option value="m">Every 4 weeks</option></select></div>
+    <div class="total"><span id="plabel">Price per clean</span><strong id="price">$0</strong></div>
+    <button class="btn" id="open" type="button">Book this clean</button>
+    <p class="note" id="mins"></p>
+    <p class="note">Prices are estimates for a property in good condition. If it differs from your description, we’ll contact you before we start.</p>
+  </div>
+</div>
+</main>
+</div>
+
+<section id="services"><div class="wrap">
+  <h2>Three ways we clean your home</h2>
+  <div class="services">
+    <div><h3>Premium house clean</h3><p>Kitchen, lounge and dining, entry and hallway, bathroom and bedrooms. One time or on a regular schedule, with 10% off weekly and 5% off fortnightly.</p></div>
+    <div><h3>Spring / deep clean</h3><p>A longer, more thorough clean priced by bedrooms, with a minimum time on site so nothing is rushed.</p></div>
+    <div><h3>End of lease</h3><p>Flat-rate cleaning for handing the keys back, backed by our Bond Back Guarantee.</p></div>
+  </div>
+</div></section>
+
+<section id="how" class="band"><div class="wrap">
+  <h2>Booked in three steps</h2>
+  <ol class="steps">
+    <li><h3>Get your price</h3><p>Choose your service and home size. The price shows straight away.</p></li>
+    <li><h3>Book a time</h3><p>Fill in a short form with your address, date and any extras.</p></li>
+    <li><h3>We clean</h3><p>On arrival we check the property matches your booking. If it doesn’t, we call you first.</p></li>
+  </ol>
+</div></section>
+
+<section><div class="wrap">
+  <h2>What you can count on</h2>
+  <ul class="incl">
+    <li>Flat-rate pricing by home size</li><li>Bond Back Guarantee on end of lease cleans</li>
+    <li>Weekly and fortnightly discounts</li><li>A call from us before work starts if anything changes</li>
+  </ul>
+</div></section>
+
+<section id="contact" class="band"><div class="wrap">
+  <h2>Talk to us</h2>
+  <p style="color:var(--muted);max-width:32rem">Prefer to book by phone? Call or text any time between 8am and 8pm.</p>
+  <p><a class="btn" href="tel:0458283459">Call 0458 283 459</a></p>
+</div></section>
+
+<footer><div class="wrap">© 2026 Hobart Cleaning Services. Open 8am–8pm.</div></footer>
+
+<dialog id="dlg" aria-labelledby="dt">
+  <div class="dh"><h2 id="dt">Book your clean</h2><button class="x" id="close" type="button" aria-label="Close">×</button></div>
+  <div id="formwrap">
+  <p class="sum" id="sum"></p>
+  <form id="bf" novalidate>
+    <fieldset><legend>Service area</legend>
+      <label>Postcode<input id="pc" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" required></label></fieldset>
+    <fieldset><legend>Extras</legend>
+      <div class="chks">
+        <label class="chk"><input type="checkbox" name="x" value="Garage">Garage</label>
+        <label class="chk"><input type="checkbox" name="x" value="Balcony">Balcony</label>
+        <label class="chk"><input type="checkbox" name="x" value="Multiple storeys">Multiple storeys</label>
+        <label class="chk"><input type="checkbox" name="x" value="Oven / stove clean">Oven / stove clean</label>
+        <label class="chk"><input type="checkbox" name="x" value="Study / sunroom">Study / sunroom</label>
+        <label class="chk"><input type="checkbox" name="x" value="Additional living / dining">Additional living / dining</label>
+        <label class="chk"><input type="checkbox" name="x" value="Laundry">Laundry</label>
+        <label class="chk"><input type="checkbox" name="x" value="Spring / deep clean">Spring / deep clean</label>
+      </div><p class="note">We confirm any extras with you before the clean.</p></fieldset>
+    <fieldset><legend>Date and time</legend>
+      <div class="g2"><label>Preferred date<input type="date" id="dt1" required></label>
+      <label>Start time<select class="f" id="tm"><option>8:00 am</option><option>9:00 am</option><option>10:00 am</option><option>11:00 am</option><option>12:00 pm</option><option>1:00 pm</option><option>2:00 pm</option><option>3:00 pm</option><option>4:00 pm</option></select></label></div>
+      <label class="chk"><input type="checkbox" id="wl">Add me to the waiting list if my time is unavailable</label>
+      <label style="margin-top:1rem">Paid parking fee to include
+        <select class="f" id="pk"><option>$0</option><option>$5</option><option>$10</option><option>$20</option><option>Other</option></select></label></fieldset>
+    <fieldset><legend>Your details</legend>
+      <div class="g2"><label>First name<input id="fn" autocomplete="given-name" required></label><label>Last name<input id="ln" autocomplete="family-name" required></label>
+      <label>Phone<input id="ph" type="tel" autocomplete="tel" required></label><label>Email (optional)<input id="em" type="email" autocomplete="email"></label></div>
+      <div class="g2"><label>Address<input id="ad" autocomplete="street-address" required></label><label>Apt / unit<input id="un"></label></div>
+      <label>Special notes or instructions<textarea id="nt" rows="3"></textarea></label></fieldset>
+    <button class="btn" type="submit">Request booking</button>
+    <p class="note" id="err" role="alert"></p>
+  </form></div>
+  <div id="done" hidden>
+    <p class="sum" id="sum2"></p>
+    <p>Almost done. Send this request by text so we have it, or call us to confirm.</p>
+    <div class="acts"><a class="btn" id="sms" href="#">Text this request</a><a class="btn alt" href="tel:0458283459">Call 0458 283 459</a></div>
+  </div>
+</dialog>
+
+<script>
+const D={prem:{0:{w:118.8,f:125.4,m:132,o:132},1:{w:118.8,f:125.45,m:132,o:132},2:{w:148.5,f:156.75,m:165,o:165},3:{w:178.2,f:188.1,m:198,o:198},4:{w:237.6,f:250.8,m:264,o:264}},
+ deep:{0:231,1:231,2:297,3:363,4:462},eol:{1:440,2:550,3:660,4:990}};
+const MINS={prem:{0:2,1:2,2:2.5,3:3,4:4},deep:{1:3.5,2:4.5,3:5.5,4:7}};
+const $=id=>document.getElementById(id);
+const money=n=>'$'+(Number.isInteger(n)?n:n.toFixed(2));
+const FQ={o:'One time',w:'Every week',f:'Every 2 weeks',m:'Every 4 weeks'};
+let cur={};
+function calc(){
+  const s=$('svc').value;
+  const eol=s==='eol';
+  [...$('bed').options][0].disabled=eol;
+  if(eol&&$('bed').value==='0')$('bed').value='1';
+  $('freqrow').hidden=s!=='prem';
+  const b=$('bed').value,f=s==='prem'?$('freq').value:'o';
+  const p=s==='prem'?D.prem[b][f]:D[s][b];
+  $('price').textContent=(s==='prem'?'':'From ')+money(p);
+  $('plabel').textContent=s==='prem'?(f==='o'?'Price':'Price per clean'):'Estimated price';
+  const m=MINS[s]&&MINS[s][b];
+  $('mins').textContent=m?'Minimum time on site: '+m+' hours.':'';
+  const sv=$('svc').selectedOptions[0].text,bd=$('bed').selectedOptions[0].text;
+  cur={text:sv+', '+bd+(s==='prem'?', '+FQ[f]:'')+' — '+(s==='prem'?'':'from ')+money(p)};
+}
+['svc','bed','freq'].forEach(i=>$(i).addEventListener('change',calc));
+const dlg=$('dlg');
+$('open').addEventListener('click',()=>{
+  $('sum').textContent=cur.text;$('formwrap').hidden=false;$('done').hidden=true;$('err').textContent='';
+  const t=new Date();t.setDate(t.getDate()+1);$('dt1').min=t.toISOString().slice(0,10);
+  dlg.showModal();
+});
+$('close').addEventListener('click',()=>dlg.close());
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+$('bf').addEventListener('submit',e=>{
+  e.preventDefault();
+  if(!/^\d{4}$/.test($('pc').value.trim())){$('err').textContent='Enter a 4-digit postcode.';$('pc').focus();return}
+  if(!$('bf').checkValidity()){$('err').textContent='Please fill in the required fields.';$('bf').reportValidity();return}
+  const x=[...document.querySelectorAll('input[name=x]:checked')].map(i=>i.value).join(', ')||'None';
+  const msg=['Booking request: '+cur.text,'Name: '+$('fn').value+' '+$('ln').value,'Phone: '+$('ph').value,
+   'Address: '+$('ad').value+($('un').value?' ('+$('un').value+')':'')+', '+$('pc').value,
+   'Date: '+$('dt1').value+' at '+$('tm').value+($('wl').checked?' (waiting list OK)':''),
+   'Extras: '+x,'Parking: '+$('pk').value,$('nt').value?'Notes: '+$('nt').value:''].filter(Boolean).join('\n');
+  $('sum2').textContent=cur.text;
+  $('sms').href='sms:0458283459?&body='+encodeURIComponent(msg);
+  $('formwrap').hidden=true;$('done').hidden=false;
+});
+calc();
+</script>
+</body>
+</html>
